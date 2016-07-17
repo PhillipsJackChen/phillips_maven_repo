@@ -1,0 +1,101 @@
+1. JDK是需要安装的，如果不安装，那么javac等命令就无法使用。说白了JDK就是工具包，里面包含了许许多多的命令。
+2. JRE是java运行环境，输入java -version如果显示了java的版本，仅仅说明jre环境配好了。
+3. git地址：https://github.com/PhillipsJackChen/phillips_repository.git；ssh地址：git@github.com:PhillipsJackChen/phillips_repository.git；
+4. jenkins用户名：PhillipsChen  密码：abc123_   全名：PhillipsJackChen  email:18862172316@163.com
+5. mysql免安装版就是只要手动安装一下服务（mysqld -install），然后手动启动一下服务（net start mysql）,之后再进入即可（mysql - u root）
+6. 配置remote的git地址一定是git@git...，而不是http://....
+7. 启动Tomcat：到/bin目录下，点击Tomcat7.exe即可	
+
+**8. 很重要的一点：当jenkins无法连接到远程github仓库的时候:
+     1.点击用户名->设置，查看是否添加public ssh key。
+	 2.查看.jenkins文件夹中是否有.ssh文件夹，没有的话copy一份到这里。	 
+	 
+9.修改jenkins启动端口：java –jar Jenkins.war --httpPort=8089（端口号任意配，只要不冲突即可）
+
+10.另一个git仓库地址：https://github.com/PhillipsJackChen/jenkins.git
+
+11.D:\MavenProject>java -cp target/my-project-helloWorld-1.0.jar com.augmentum.project.helloWorld
+
+12.在执行maven install时，下载速度太慢，可以在maven安装目录下的conf文件夹下的settins.xml文件中，做如下修改：
+   <mirror>  
+      <id>repo2</id>  
+      <mirrorOf>central</mirrorOf>  
+      <name>Human Readable Name for this Mirror.</name>  
+      <url>http://repo2.maven.org/maven2/</url>  
+    </mirror>
+	像这样添加一些国内的快的镜像即可。
+
+13.遇到Dynamic Web Module 3.0 requires Java 1.6 or newer这种错误，这是由于我的Maven编译级别是 jdk1.5 或以下，
+而我导入了 jdk1.6 以上的依赖包，解决方法如下：
+在项目的pom.xml的<build></build>标签中加入：
+<plugins>  
+    <plugin>  
+        <groupId>org.apache.maven.plugins</groupId>  
+        <artifactId>maven-compiler-plugin</artifactId>  
+        <version>2.3.2</version>  
+        <configuration>  
+            <source>1.6</source>  
+            <target>1.6</target>  
+        </configuration>  
+    </plugin>  
+</plugins>
+保存，项目构建完成后在项目文件夹上点右键，选择Maven->Update Project Configuration，问题解决。
+
+14.如果eclipse提示无法执行compile命令，可能是因为jre环境指向错了，应该指向jdk的安装路径。
+
+15.自动部署war包到Tomcat中：
+   1.需要把tomcat7-maven-plugin这个插件引入：
+   <build>    
+        <plugins>    
+        ....
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.1</version>
+                <configuration>
+                    <url>http://localhost:8080/manager/text</url>
+                    <server>tomcat</server>
+                    <path>/myapp</path>
+                </configuration>
+            </plugin>
+        </plugins>
+        ...
+    </build>
+	2.修改TOMCAT_HOME/conf/tomcat-users.xml:
+  <tomcat-users>
+  ...
+  <role rolename="admin-gui"/>
+  <role rolename="admin-script"/>
+  <role rolename="manager-gui"/>
+  <role rolename="manager-script"/>
+  <role rolename="manager-jmx"/>
+  <role rolename="manager-status"/>
+  <user username="admin" password="admin" roles="manager-gui,manager-script,manager-jmx,manager-status,admin-script,admin-gui"/>
+  ...
+ </tomcat-users>
+ 
+   3.修改MavenHOME/conf/settins.xml:
+   <servers>
+   ...
+   <server>
+      <id>tomcat</id>//这里的id内容要和pom.xml中的<server>tomcat</server>中的内容一致
+      <username>admin</username>
+      <password>admin</password>
+    </server>
+   ...
+   </servers>
+   
+   4.Deploy using: mvn tomcat7:redeploy
+   
+16.修改Tomcat管理用户配置
+Deploy to container Plugin需要通过属于manager-script组的Tomcat管理用户将war包发布到Tomcat服务器上，
+默认没有这样的用户，需要在TOMCAT_HOME/conf/tomcat-users.xml添加manager-script组和相应的用户，增加如下两行：
+<role rolename="manager-script"/>
+<user username="admin" password="admin" roles="manager-script"/>
+(前面已经有过描述)
+
+
+
+问题：
+1. 反向代理配置有误？
+2. 设置jenkins的workspace（有种方法是到jenkins.war中修改web.xml好像是）
