@@ -35,11 +35,11 @@ public class LoginAction extends ActionSupport {
 			Map session=ActionContext.getContext().getSession();
 			session.put("user.name", user.getName());
 			
-			System.out.println("登录成功,用户名="+user.getName());
+			System.out.println("login success, user name="+user.getName());
 			return "success";
 		}
 		
-		System.out.println("登录失败，用户名="+user.getName());
+		System.out.println("login failed, user name="+user.getName());
 		return "fail";
 	}
 	
