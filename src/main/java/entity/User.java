@@ -45,7 +45,6 @@ public class User {
 	}
 
 	@Id
-	//采用数据库自增方式生成主键
 	//@GeneratedValue(strategy=GenerationType.AUTO)
 	@GeneratedValue
 	public int getId() {
