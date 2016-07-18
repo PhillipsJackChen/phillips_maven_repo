@@ -13,7 +13,7 @@
 		<filter-class>filter.CharsetEncodingFilter</filter-class>
 		<init-param>
 			<param-name>encoding</param-name>
-			<param-value>GB18030</param-value>
+			<param-value>utf-8</param-value>
 		</init-param>
 	</filter>
 
