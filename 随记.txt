@@ -1,33 +1,33 @@
-1. JDKÊÇĞèÒª°²×°µÄ£¬Èç¹û²»°²×°£¬ÄÇÃ´javacµÈÃüÁî¾ÍÎŞ·¨Ê¹ÓÃ¡£Ëµ°×ÁËJDK¾ÍÊÇ¹¤¾ß°ü£¬ÀïÃæ°üº¬ÁËĞíĞí¶à¶àµÄÃüÁî¡£
-2. JREÊÇjavaÔËĞĞ»·¾³£¬ÊäÈëjava -versionÈç¹ûÏÔÊ¾ÁËjavaµÄ°æ±¾£¬½ö½öËµÃ÷jre»·¾³ÅäºÃÁË¡£
-3. gitµØÖ·£ºhttps://github.com/PhillipsJackChen/phillips_repository.git£»sshµØÖ·£ºgit@github.com:PhillipsJackChen/phillips_repository.git£»
-4. jenkinsÓÃ»§Ãû£ºPhillipsChen  ÃÜÂë£ºabc123_   È«Ãû£ºPhillipsJackChen  email:18862172316@163.com
-5. mysqlÃâ°²×°°æ¾ÍÊÇÖ»ÒªÊÖ¶¯°²×°Ò»ÏÂ·şÎñ£¨mysqld -install£©£¬È»ºóÊÖ¶¯Æô¶¯Ò»ÏÂ·şÎñ£¨net start mysql£©,Ö®ºóÔÙ½øÈë¼´¿É£¨mysql - u root£©
-6. ÅäÖÃremoteµÄgitµØÖ·Ò»¶¨ÊÇgit@git...£¬¶ø²»ÊÇhttp://....
-7. Æô¶¯Tomcat£ºµ½/binÄ¿Â¼ÏÂ£¬µã»÷Tomcat7.exe¼´¿É	
+1. JDKæ˜¯éœ€è¦å®‰è£…çš„ï¼Œå¦‚æœä¸å®‰è£…ï¼Œé‚£ä¹ˆjavacç­‰å‘½ä»¤å°±æ— æ³•ä½¿ç”¨ã€‚è¯´ç™½äº†JDKå°±æ˜¯å·¥å…·åŒ…ï¼Œé‡Œé¢åŒ…å«äº†è®¸è®¸å¤šå¤šçš„å‘½ä»¤ã€‚
+2. JREæ˜¯javaè¿è¡Œç¯å¢ƒï¼Œè¾“å…¥java -versionå¦‚æœæ˜¾ç¤ºäº†javaçš„ç‰ˆæœ¬ï¼Œä»…ä»…è¯´æ˜jreç¯å¢ƒé…å¥½äº†ã€‚
+3. gitåœ°å€ï¼šhttps://github.com/PhillipsJackChen/phillips_repository.gitï¼›sshåœ°å€ï¼šgit@github.com:PhillipsJackChen/phillips_repository.gitï¼›
+4. jenkinsç”¨æˆ·åï¼šPhillipsChen  å¯†ç ï¼šabc123_   å…¨åï¼šPhillipsJackChen  email:18862172316@163.com
+5. mysqlå…å®‰è£…ç‰ˆå°±æ˜¯åªè¦æ‰‹åŠ¨å®‰è£…ä¸€ä¸‹æœåŠ¡ï¼ˆmysqld -installï¼‰ï¼Œç„¶åæ‰‹åŠ¨å¯åŠ¨ä¸€ä¸‹æœåŠ¡ï¼ˆnet start mysqlï¼‰,ä¹‹åå†è¿›å…¥å³å¯ï¼ˆmysql - u rootï¼‰
+6. é…ç½®remoteçš„gitåœ°å€ä¸€å®šæ˜¯git@git...ï¼Œè€Œä¸æ˜¯http://....
+7. å¯åŠ¨Tomcatï¼šåˆ°/binç›®å½•ä¸‹ï¼Œç‚¹å‡»Tomcat7.exeå³å¯	
 
-**8. ºÜÖØÒªµÄÒ»µã£ºµ±jenkinsÎŞ·¨Á¬½Óµ½Ô¶³Ìgithub²Ö¿âµÄÊ±ºò:
-     1.µã»÷ÓÃ»§Ãû->ÉèÖÃ£¬²é¿´ÊÇ·ñÌí¼Ópublic ssh key¡£
-	 2.²é¿´.jenkinsÎÄ¼ş¼ĞÖĞÊÇ·ñÓĞ.sshÎÄ¼ş¼Ğ£¬Ã»ÓĞµÄ»°copyÒ»·İµ½ÕâÀï¡£	 
+**8. å¾ˆé‡è¦çš„ä¸€ç‚¹ï¼šå½“jenkinsæ— æ³•è¿æ¥åˆ°è¿œç¨‹githubä»“åº“çš„æ—¶å€™:
+     1.ç‚¹å‡»ç”¨æˆ·å->è®¾ç½®ï¼ŒæŸ¥çœ‹æ˜¯å¦æ·»åŠ public ssh keyã€‚
+	 2.æŸ¥çœ‹.jenkinsæ–‡ä»¶å¤¹ä¸­æ˜¯å¦æœ‰.sshæ–‡ä»¶å¤¹ï¼Œæ²¡æœ‰çš„è¯copyä¸€ä»½åˆ°è¿™é‡Œã€‚	 
 	 
-9.ĞŞ¸ÄjenkinsÆô¶¯¶Ë¿Ú£ºjava ¨Cjar Jenkins.war --httpPort=8089£¨¶Ë¿ÚºÅÈÎÒâÅä£¬Ö»Òª²»³åÍ»¼´¿É£©
+9.ä¿®æ”¹jenkinså¯åŠ¨ç«¯å£ï¼šjava â€“jar Jenkins.war --httpPort=8089ï¼ˆç«¯å£å·ä»»æ„é…ï¼Œåªè¦ä¸å†²çªå³å¯ï¼‰
 
-10.ÁíÒ»¸ögit²Ö¿âµØÖ·£ºhttps://github.com/PhillipsJackChen/jenkins.git
+10.å¦ä¸€ä¸ªgitä»“åº“åœ°å€ï¼šhttps://github.com/PhillipsJackChen/jenkins.git
 
 11.D:\MavenProject>java -cp target/my-project-helloWorld-1.0.jar com.augmentum.project.helloWorld
 
-12.ÔÚÖ´ĞĞmaven installÊ±£¬ÏÂÔØËÙ¶ÈÌ«Âı£¬¿ÉÒÔÔÚmaven°²×°Ä¿Â¼ÏÂµÄconfÎÄ¼ş¼ĞÏÂµÄsettins.xmlÎÄ¼şÖĞ£¬×öÈçÏÂĞŞ¸Ä£º
+12.åœ¨æ‰§è¡Œmaven installæ—¶ï¼Œä¸‹è½½é€Ÿåº¦å¤ªæ…¢ï¼Œå¯ä»¥åœ¨mavenå®‰è£…ç›®å½•ä¸‹çš„confæ–‡ä»¶å¤¹ä¸‹çš„settins.xmlæ–‡ä»¶ä¸­ï¼Œåšå¦‚ä¸‹ä¿®æ”¹ï¼š
    <mirror>  
       <id>repo2</id>  
       <mirrorOf>central</mirrorOf>  
       <name>Human Readable Name for this Mirror.</name>  
       <url>http://repo2.maven.org/maven2/</url>  
     </mirror>
-	ÏñÕâÑùÌí¼ÓÒ»Ğ©¹úÄÚµÄ¿ìµÄ¾µÏñ¼´¿É¡£
+	åƒè¿™æ ·æ·»åŠ ä¸€äº›å›½å†…çš„å¿«çš„é•œåƒå³å¯ã€‚
 
-13.Óöµ½Dynamic Web Module 3.0 requires Java 1.6 or newerÕâÖÖ´íÎó£¬ÕâÊÇÓÉÓÚÎÒµÄMaven±àÒë¼¶±ğÊÇ jdk1.5 »òÒÔÏÂ£¬
-¶øÎÒµ¼ÈëÁË jdk1.6 ÒÔÉÏµÄÒÀÀµ°ü£¬½â¾ö·½·¨ÈçÏÂ£º
-ÔÚÏîÄ¿µÄpom.xmlµÄ<build></build>±êÇ©ÖĞ¼ÓÈë£º
+13.é‡åˆ°Dynamic Web Module 3.0 requires Java 1.6 or newerè¿™ç§é”™è¯¯ï¼Œè¿™æ˜¯ç”±äºæˆ‘çš„Mavenç¼–è¯‘çº§åˆ«æ˜¯ jdk1.5 æˆ–ä»¥ä¸‹ï¼Œ
+è€Œæˆ‘å¯¼å…¥äº† jdk1.6 ä»¥ä¸Šçš„ä¾èµ–åŒ…ï¼Œè§£å†³æ–¹æ³•å¦‚ä¸‹ï¼š
+åœ¨é¡¹ç›®çš„pom.xmlçš„<build></build>æ ‡ç­¾ä¸­åŠ å…¥ï¼š
 <plugins>  
     <plugin>  
         <groupId>org.apache.maven.plugins</groupId>  
@@ -39,12 +39,12 @@
         </configuration>  
     </plugin>  
 </plugins>
-±£´æ£¬ÏîÄ¿¹¹½¨Íê³ÉºóÔÚÏîÄ¿ÎÄ¼ş¼ĞÉÏµãÓÒ¼ü£¬Ñ¡ÔñMaven->Update Project Configuration£¬ÎÊÌâ½â¾ö¡£
+ä¿å­˜ï¼Œé¡¹ç›®æ„å»ºå®Œæˆååœ¨é¡¹ç›®æ–‡ä»¶å¤¹ä¸Šç‚¹å³é”®ï¼Œé€‰æ‹©Maven->Update Project Configurationï¼Œé—®é¢˜è§£å†³ã€‚
 
-14.Èç¹ûeclipseÌáÊ¾ÎŞ·¨Ö´ĞĞcompileÃüÁî£¬¿ÉÄÜÊÇÒòÎªjre»·¾³Ö¸Ïò´íÁË£¬Ó¦¸ÃÖ¸ÏòjdkµÄ°²×°Â·¾¶¡£
+14.å¦‚æœeclipseæç¤ºæ— æ³•æ‰§è¡Œcompileå‘½ä»¤ï¼Œå¯èƒ½æ˜¯å› ä¸ºjreç¯å¢ƒæŒ‡å‘é”™äº†ï¼Œåº”è¯¥æŒ‡å‘jdkçš„å®‰è£…è·¯å¾„ã€‚
 
-15.×Ô¶¯²¿Êğwar°üµ½TomcatÖĞ£º
-   1.ĞèÒª°Ñtomcat7-maven-pluginÕâ¸ö²å¼şÒıÈë£º
+15.è‡ªåŠ¨éƒ¨ç½²waråŒ…åˆ°Tomcatä¸­ï¼š
+   1.éœ€è¦æŠŠtomcat7-maven-pluginè¿™ä¸ªæ’ä»¶å¼•å…¥ï¼š
    <build>    
         <plugins>    
         ....
@@ -61,7 +61,7 @@
         </plugins>
         ...
     </build>
-	2.ĞŞ¸ÄTOMCAT_HOME/conf/tomcat-users.xml:
+	2.ä¿®æ”¹TOMCAT_HOME/conf/tomcat-users.xml:
   <tomcat-users>
   ...
   <role rolename="admin-gui"/>
@@ -74,11 +74,11 @@
   ...
  </tomcat-users>
  
-   3.ĞŞ¸ÄMavenHOME/conf/settins.xml:
+   3.ä¿®æ”¹MavenHOME/conf/settins.xml:
    <servers>
    ...
    <server>
-      <id>tomcat</id>//ÕâÀïµÄidÄÚÈİÒªºÍpom.xmlÖĞµÄ<server>tomcat</server>ÖĞµÄÄÚÈİÒ»ÖÂ
+      <id>tomcat</id>//è¿™é‡Œçš„idå†…å®¹è¦å’Œpom.xmlä¸­çš„<server>tomcat</server>ä¸­çš„å†…å®¹ä¸€è‡´
       <username>admin</username>
       <password>admin</password>
     </server>
@@ -87,15 +87,48 @@
    
    4.Deploy using: mvn tomcat7:redeploy
    
-16.ĞŞ¸ÄTomcat¹ÜÀíÓÃ»§ÅäÖÃ
-Deploy to container PluginĞèÒªÍ¨¹ıÊôÓÚmanager-script×éµÄTomcat¹ÜÀíÓÃ»§½«war°ü·¢²¼µ½Tomcat·şÎñÆ÷ÉÏ£¬
-Ä¬ÈÏÃ»ÓĞÕâÑùµÄÓÃ»§£¬ĞèÒªÔÚTOMCAT_HOME/conf/tomcat-users.xmlÌí¼Ómanager-script×éºÍÏàÓ¦µÄÓÃ»§£¬Ôö¼ÓÈçÏÂÁ½ĞĞ£º
+16.ä¿®æ”¹Tomcatç®¡ç†ç”¨æˆ·é…ç½®
+Deploy to container Pluginéœ€è¦é€šè¿‡å±äºmanager-scriptç»„çš„Tomcatç®¡ç†ç”¨æˆ·å°†waråŒ…å‘å¸ƒåˆ°TomcatæœåŠ¡å™¨ä¸Šï¼Œ
+é»˜è®¤æ²¡æœ‰è¿™æ ·çš„ç”¨æˆ·ï¼Œéœ€è¦åœ¨TOMCAT_HOME/conf/tomcat-users.xmlæ·»åŠ manager-scriptç»„å’Œç›¸åº”çš„ç”¨æˆ·ï¼Œå¢åŠ å¦‚ä¸‹ä¸¤è¡Œï¼š
 <role rolename="manager-script"/>
 <user username="admin" password="admin" roles="manager-script"/>
-(Ç°ÃæÒÑ¾­ÓĞ¹ıÃèÊö)
+(å‰é¢å·²ç»æœ‰è¿‡æè¿°)
+
+17.å·¥ç¨‹ä¸­éš¾å…å‡ºç°ä¸€äº›éœ€è¦æ¯æ¬¡éƒ¨ç½²éƒ½éœ€è¦é…ç½®çš„å‚æ•°ï¼Œå¦‚æ•°æ®æºè¿æ¥å‚æ•°ç­‰ï¼Œæµ‹è¯•ç¯å¢ƒè·Ÿå®é™…è¿è¡Œç¯å¢ƒæ˜¯ä¸ä¸€æ ·çš„ã€‚ä½¿ç”¨springæ¡†æ¶çš„è¯ï¼Œè¿™äº›å‚æ•°å¯èƒ½ç‹¬ç«‹åˆ†å¸ƒåœ¨ä¸åŒçš„springContexé…ç½®æ–‡ä»¶é‡Œé¢ã€‚å¯ä»¥è€ƒè™‘å°†è¿™äº›å‚æ•°ç‹¬ç«‹åˆ°ä¸€ä¸ªé…ç½®æ–‡ä»¶å¹¶å¯ä»¥è®©springæ–¹ä¾¿åŠ è½½æ³¨å…¥ã€‚å¯é€‰çš„ä¸€ä¸ªæ–¹æ¡ˆæ˜¯ä½¿ç”¨javaçš„propertyæ–‡ä»¶ï¼Œå°†æ‰€æœ‰çš„é…ç½®å‚æ•°éƒ½å†™åˆ°propertyæ–‡ä»¶é‡Œé¢ï¼Œä½¿ç”¨${key}æ¥åœ¨springé…ç½®æ–‡ä»¶é‡Œé¢å¾—åˆ°è¿™ä¸ªå‚æ•°ã€‚
+ä¾‹å­ï¼š
+propertyæ–‡ä»¶global-config-file.propertiesï¼š
+
+#FOR dataSource
+jdbc.dataSource.url=jdbc:postgresql://192.168.1.118:5432/DB_name
+jdbc.dataSource.username=postgres
+jdbc.dataSource.password=123
+
+ä¹‹ååœ¨springContextçš„é…ç½®æ–‡ä»¶ä¸­ï¼ŒåŠ å…¥ä¸‹é¢ä»£ç ï¼Œï¼š
+
+    <bean id="propertyConfigurer"  
+      class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">  
+      <property name="ignoreUnresolvablePlaceholders" value="true" />
+      <property name="location" value="classpath:global-config-file.properties"/>  
+    </bean>
+å³å¼•å…¥PropertyPlaceholderConfigureræ¥è¯»å–propertyé…ç½®æ–‡ä»¶ï¼Œspringæ¡†æ¶ä¼šä»å…¶é‚£é‡Œè·å–åˆ°éœ€è¦çš„é…ç½®å‚æ•°ã€‚
+
+ä¹‹åå†ç”¨${key}çš„æ ¼å¼å–ä»£ä½ æ•°æ®æºé…ç½®å‚æ•°ï¼š
+
+<bean id="myBatisDataSource" class="org.apache.commons.dbcp.BasicDataSource">
+	<property name="driverClassName" value="org.postgresql.Driver">
+	</property>
+	<property name="url"
+		value="${jdbc.dataSource.url}">   
+	</property>
+	<property name="username" value="${jdbc.dataSource.username}"></property>
+	<property name="password" value="${jdbc.dataSource.password}"></property>
+</bean>
 
 
 
-ÎÊÌâ£º
-1. ·´Ïò´úÀíÅäÖÃÓĞÎó£¿
-2. ÉèÖÃjenkinsµÄworkspace£¨ÓĞÖÖ·½·¨ÊÇµ½jenkins.warÖĞĞŞ¸Äweb.xmlºÃÏñÊÇ£©
+
+
+
+é—®é¢˜ï¼š
+1. åå‘ä»£ç†é…ç½®æœ‰è¯¯ï¼Ÿ
+2. è®¾ç½®jenkinsçš„workspaceï¼ˆæœ‰ç§æ–¹æ³•æ˜¯åˆ°jenkins.warä¸­ä¿®æ”¹web.xmlå¥½åƒæ˜¯ï¼‰
