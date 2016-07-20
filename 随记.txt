@@ -125,7 +125,62 @@ jdbc.dataSource.password=123
 </bean>
 
 
+自己写一个缓存：
+public class MyCacheManager<T> {
+	private Map<String, T> cache = new ConcurrentHashMap<String, T>();
+	
+	public T getValue(Object key) {
+		return cache.get(key);
+	}
+	
+	public void addOrUpdateCache(String key, T value) {
+		cache.put(key, value);
+	}
+	
+	//delete one record in cache by key
+	public void evictCache(String key) {
+		if (cache.containsKey(key)) {
+			cache.remove(key);
+		}
+	}
+	
+	//remove all record in cache
+	public void evictCache() {
+		cache.clear();
+	}
+}
 
+
+public class MyAccountService {
+	private MyCacheManager<Account> cacheManager;
+	
+	public MyAccountService() {
+		cacheManager = new MyCacheManager<Account>();
+	}
+	
+	public Account getAccountByName(String acctName) {
+		//query cache first
+		Account result = cacheManager.getValue(acctName);
+		if (result != null) {
+			System.out.println("get from cache..." + acctName);
+			return result;
+		}
+		result = getFromDB(acctName);
+		if (result != null) {
+			cacheManager.addOrUpdateCache(acctName, result);
+		}
+		return result;
+	}
+	
+	public void reload() {
+		cacheManager.evictCache();
+	}
+	
+	private Account getFromDB(String acctName) {
+		System.out.println("real querying db..." + acctName);
+		return new Account(acctName);
+	}
+}
 
 
 
