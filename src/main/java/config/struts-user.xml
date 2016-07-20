@@ -30,7 +30,7 @@
 	<!-- 与spring集成的写法，action等交予spring管理 -->
 	<package name="loginAction" namespace="/" extends="abstract_struts">
 	
-		<action name="login" class="loginAction">
+		<action name="login" class="action.LoginAction">
 			<result name="success" type="redirect">userMain</result>
 			<result name="fail">/fail.jsp</result>
 		</action>
